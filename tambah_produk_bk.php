@@ -131,7 +131,7 @@ session_start();
                             <input type="file" name="gambar_produk" class="form-control" required>
                         </div>
                         <div class="d-flex justify-content-end mb-3">
-                            <a href="deskripsi.php" class="btn btn-danger me-2">Batalkan</a>
+                            <a href="produk_bubuk_kopi.php" class="btn btn-danger me-2">Batalkan</a>
                             <button type="submit" class="btn btn-success">Tambah Produk +</button>
                         </div>
                     </form>
