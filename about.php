@@ -78,17 +78,17 @@ $row2 = $result_deskripsi2->fetch_assoc();
     <!-- About Start -->
     <div class="container-fluid pt-5">
         <div class="container">
-            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 500px;">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 500px;" data-aos="fade-up">
                 <h2 class="text-primary font-secondary">Tentang Kami</h2>
                 <h1 class="display-4 text-uppercase">Selamat datang di Rumata Coffee</h1>
             </div>
             <div class="row gx-5">
-                <div class="col-lg-6 mb-5 mb-lg-0" style="min-height: 400px;">
+                <div class="col-lg-6 mb-5 mb-lg-0" style="min-height: 400px;" data-aos="fade-up">
                     <div class="position-relative h-100">
                         <img class="position-absolute w-100 h-100" src="img/<?php echo $row1['gambar_deskripsi']; ?>" style="object-fit: cover;">
                     </div>
                 </div>
-                <div class="col-lg-6 pb-5">
+                <div class="col-lg-6 pb-5" data-aos="fade-down">
                     <h4 class="mb-4"><?php echo $row1['judul_deskripsi']; ?></h4>
                     <p class="mb-5"><?php echo $row1['isi_deskripsi']; ?></p>
                 </div>
@@ -99,11 +99,11 @@ $row2 = $result_deskripsi2->fetch_assoc();
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row gx-5">
-                <div class="col-lg-6 pb-5">
+                <div class="col-lg-6 pb-5" data-aos="fade-down">
                     <h4 class="mb-4"><?php echo $row2['judul_deskripsi']; ?></h4>
                     <p class="mb-5"><?php echo $row2['isi_deskripsi']; ?></p>
                 </div>
-                <div class="col-lg-6 mb-5 mb-lg-0" style="min-height: 400px;">
+                <div class="col-lg-6 mb-5 mb-lg-0" style="min-height: 400px;" data-aos="fade-up">
                     <div class="position-relative h-100">
                         <img class="position-absolute w-100 h-100" src="img/<?php echo $row2['gambar_deskripsi']; ?>" style="object-fit: cover;">
                     </div>
@@ -115,12 +115,12 @@ $row2 = $result_deskripsi2->fetch_assoc();
     <div class="bg-img ps-5">
         <div class="container">
             <div class="row gx-5">
-                <div class="col-lg-6 my-1 mb-lg-0" style="min-height: 400px;">
+                <div class="col-lg-6 my-1 mb-lg-0" style="min-height: 400px;" data-aos="fade-up">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.4525828579476!2d99.12252647365543!3d2.3535949575304707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e01c215005083%3A0x65462cae6d9950f!2sRumata%20Coffee!5e0!3m2!1sid!2sid!4v1686060995033!5m2!1sid!2sid" width="100%" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-5">
+                <div class="col-lg-6 mt-5" data-aos="fade-down">
                     <h4 class="mb-4 text-white">Temukan Kami:</h4>
                     <p class="mb-5 text-white">Lokasi Rumata Coffee berada di Jalan Partahan Bosi, Kecamatan Laguboti, Kabupaten Toba, Sumatera Utara dengan Kode Pos 22381</p>
                     <div class="d-flex mb-2">
