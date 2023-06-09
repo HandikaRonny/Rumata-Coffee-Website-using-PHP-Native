@@ -144,31 +144,30 @@ if (isset($_POST['simpan_perubahan'])) {
         <!-- SideNav End -->
         <div id="layoutSidenav_content">
             <main>
+                <div class="container mt-4">
+                    <h1 class="my-4">Edit Deskripsi</h1>
+                    <form action="" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="id_deskripsi" value="<?php echo $deskripsi['id_deskripsi']; ?>">
+                        <div class="mb-3">
+                            <label for="judul_deskripsi" class="form-label">Judul Deskripsi:</label>
+                            <input type="text" name="judul_deskripsi" class="form-control" value="<?php echo $deskripsi['judul_deskripsi']; ?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="isi_deskripsi" class="form-label">Isi Deskripsi:</label>
+                            <textarea name="isi_deskripsi" class="form-control"><?php echo $deskripsi['isi_deskripsi']; ?></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="gambar_deskripsi" class="form-label">Gambar Deskripsi:</label>
+                            <input type="file" name="gambar_deskripsi" class="form-control">
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <a href="deskripsi.php" class="btn btn-danger me-2">Batalkan</a>
+                            <button type="submit" name="simpan_perubahan" class="btn btn-primary">Simpan Perubahan</button>
+                        </div>
+                    </form>
+                </div>
+            </main>
         </div>
-        <div class="container mt-5">
-            <h1 class="my-4">Edit Deskripsi</h1>
-            <form action="" method="POST" enctype="multipart/form-data">
-                <input type="hidden" name="id_deskripsi" value="<?php echo $deskripsi['id_deskripsi']; ?>">
-                <div class="mb-3">
-                    <label for="judul_deskripsi" class="form-label">Judul Deskripsi:</label>
-                    <input type="text" name="judul_deskripsi" class="form-control" value="<?php echo $deskripsi['judul_deskripsi']; ?>">
-                </div>
-                <div class="mb-3">
-                    <label for="isi_deskripsi" class="form-label">Isi Deskripsi:</label>
-                    <textarea name="isi_deskripsi" class="form-control"><?php echo $deskripsi['isi_deskripsi']; ?></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="gambar_deskripsi" class="form-label">Gambar Deskripsi:</label>
-                    <input type="file" name="gambar_deskripsi" class="form-control">
-                </div>
-                <div class="d-flex justify-content-end">
-                    <a href="deskripsi.php" class="btn btn-danger me-2">Batalkan</a>
-                    <button type="submit" name="simpan_perubahan" class="btn btn-primary">Simpan Perubahan</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    </main>
     </div>
     </div>
 
