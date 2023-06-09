@@ -48,51 +48,51 @@ session_start();
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
-                <div class="nav">
-                    <a class="nav-link" href="administrator.php">
-                    <div class="sb-nav-link-icon">
-                        <i class="fas fa-tachometer-alt"></i>
+                    <div class="nav">
+                        <a class="nav-link" href="administrator.php">
+                            <div class="sb-nav-link-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            Dashboard
+                        </a>
+                        <a class="nav-link" href="deskripsi.php">
+                            <div class="sb-nav-link-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            Deskripsi
+                        </a>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseProduk" aria-expanded="false" aria-controls="collapseProduk">
+                            <div class="sb-nav-link-icon">
+                                <i class="fas fa-columns"></i>
+                            </div>
+                            Tabel Produk
+                            <div class="sb-sidenav-collapse-arrow">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseProduk" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="produk_kopi_kekinian.php">Kopi Kekinian</a>
+                                <a class="nav-link" href="produk_bubuk_kopi.php">Bubuk Kopi</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link" href="masukan.php">
+                            <div class="sb-nav-link-icon">
+                                <i class="fas fa-envelope-open-text"></i>
+                            </div>
+                            Masukan
+                        </a>
                     </div>
-                    Dashboard
-                    </a>
-                    <a class="nav-link" href="deskripsi.php">
-                    <div class="sb-nav-link-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    Deskripsi
-                    </a>
-                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseProduk" aria-expanded="false" aria-controls="collapseProduk">
-                    <div class="sb-nav-link-icon">
-                        <i class="fas fa-columns"></i>
-                    </div>
-                    Tabel Produk
-                    <div class="sb-sidenav-collapse-arrow">
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    </a>
-                    <div class="collapse" id="collapseProduk" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                    <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="produk_kopi_kekinian.php">Kopi Kekinian</a>
-                        <a class="nav-link" href="produk_bubuk_kopi.php">Bubuk Kopi</a>
-                    </nav>
-                    </div>
-                    <a class="nav-link" href="masukan.php">
-                    <div class="sb-nav-link-icon">
-                        <i class="fas fa-envelope-open-text"></i>
-                    </div>
-                    Masukan
-                    </a>
-                </div>
                 </div>
                 <div class="sb-sidenav-footer">
-                <div class="small">Log in sebagai:</div>
-                <?php
-                if (isset($_SESSION['is_logged_in'])) {
-                    echo $_SESSION['nama_adm'];
-                } else {
-                    echo "Pengguna";
-                }
-                ?>
+                    <div class="small">Log in sebagai:</div>
+                    <?php
+                    if (isset($_SESSION['is_logged_in'])) {
+                        echo $_SESSION['nama_adm'];
+                    } else {
+                        echo "Pengguna";
+                    }
+                    ?>
                 </div>
             </nav>
         </div>
@@ -130,7 +130,10 @@ session_start();
                             <label for="gambar_produk" class="form-label">Gambar Produk:</label>
                             <input type="file" name="gambar_produk" class="form-control" required>
                         </div>
-                        <button type="submit" class="btn btn-success">Tambah Produk +</button>
+                        <div class="d-flex justify-content-end mb-3">
+                            <a href="produk_kopi_kekinian.php" class="btn btn-danger me-2">Batalkan</a>
+                            <button type="submit" class="btn btn-success">Tambah Produk +</button>
+                        </div>
                     </form>
                 </div>
             </main>
